@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video Editor Portfolio</title>
+  <meta name="description" content="Video editor portfolio – long form and short form video editing, Premiere Pro, After Effects, Photoshop, storytelling and color grading." />
+  <meta name="theme-color" content="#0b0b10" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo" data-bind="name-logo">Portfolio</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="navMenu" aria-label="Main">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HOME ===== -->
+    <section class="hero" id="home">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="eyebrow" data-bind="role">Video Editor</p>
+          <h1 class="hero__title">Hi, I'm <span class="grad" data-bind="name">Your Name</span></h1>
+          <p class="hero__tagline" data-bind="tagline"></p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+            <a href="#" class="btn btn--ghost" id="resumeBtn" target="_blank" rel="noopener" hidden>Resume</a>
+          </div>
+        </div>
+        <div class="hero__media reveal" id="heroMedia" hidden>
+          <img id="heroImg" alt="Portrait" />
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__media reveal" id="aboutMedia" hidden>
+          <img id="aboutImg" alt="About me" />
+        </div>
+        <div class="about__body reveal">
+          <p class="eyebrow">About</p>
+          <h2 class="section__title">Crafting stories, frame by frame</h2>
+          <div id="aboutText"></div>
+          <div class="stats" id="aboutStats"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 class="section__title">Tools &amp; craft</h2>
+        </div>
+        <div class="skills" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 class="section__title">Selected work</h2>
+        </div>
+
+        <h3 class="subhead reveal">Long Video Editing</h3>
+        <div class="cards cards--long" id="longGrid"></div>
+
+        <h3 class="subhead reveal">Short Video Editing</h3>
+        <div class="cards cards--short" id="shortGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section__title">Let's work together</h2>
+          <p class="section__sub">Have a project in mind? Reach out the way that suits you best.</p>
+        </div>
+        <div class="contact">
+          <a class="contact__card reveal" id="waCard" href="#" target="_blank" rel="noopener">
+            <span class="contact__icon contact__icon--wa" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.5A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.89.9-3.02-.2-.31a8.2 8.2 0 1 1 6.9 3.77Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.09-.4-.12-.56.12-.17.25-.64.8-.78.96-.14.17-.29.19-.54.06a6.7 6.7 0 0 1-3.3-2.88c-.25-.43.25-.4.72-1.33.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48a.93.93 0 0 0-.67.31 2.8 2.8 0 0 0-.88 2.08c0 1.23.9 2.42 1.02 2.58.12.17 1.76 2.7 4.27 3.78 1.58.68 2.2.74 3 .62.49-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.1-.23-.17-.48-.29Z"/></svg>
+            </span>
+            <span class="contact__text">
+              <strong>WhatsApp</strong>
+              <small>Chat with me directly</small>
+            </span>
+            <span class="contact__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="contact__card reveal" id="mailCard" href="#">
+            <span class="contact__icon contact__icon--mail" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+            </span>
+            <span class="contact__text">
+              <strong>Email</strong>
+              <small id="mailLabel">Send me a message</small>
+            </span>
+            <span class="contact__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© <span id="year"></span> <span data-bind="name">Your Name</span>. All rights reserved.</p>
+      <div class="footer__social" id="socialLinks"></div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
